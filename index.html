@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Translator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Translator</h1>
+      <textarea
+        class="input-text-box"
+        placeholder="Input text here to translate..."
+      ></textarea>
+      <div class="from-select-container">
+        <p>From:</p>
+        <select class="from-select" onchange="ddlselect('from-select')">
+          <option value="0">Select language:</option>
+          <option value="en">English</option>
+          <option value="es">Spanish</option>
+          <option value="fr">French</option>
+          <option value="de">German</option>
+          <option value="ja">Japanese</option>
+        </select>
+      </div>
+      <div class="to-select-container">
+        <p>To:</p>
+        <select class="to-select" onchange="ddlselect('to-select')">
+          <option value="0">Select language:</option>
+          <option value="en">English</option>
+          <option value="es">Spanish</option>
+          <option value="fr">French</option>
+          <option value="de">German</option>
+          <option value="ja">Japanese</option>
+        </select>
+      </div>
+      <button class="translateButton">Translate</button>
+      <textarea
+        class="result-text-box"
+        placeholder="Translated results..."
+      ></textarea>
+    </div>
+    <div class="result"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
